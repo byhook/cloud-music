@@ -4,18 +4,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: new AppBar(
         title: new Text('主页面'),
-        backgroundColor: Colors.red,
+        centerTitle: true,
+        elevation: 0.0,
+        backgroundColor: Color(0xFFCE3433),
       ),
-      body: new Center(
-        child: new RaisedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: new Text('返回'),
-        ),
-      ),
+      body: null,
     );
   }
 }
