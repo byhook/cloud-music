@@ -1,9 +1,29 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+
+  @override
+  State<StatefulWidget> createState() {
+    return new HomePageState();
+  }
+
+}
+
+class HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    Widget userHeader = UserAccountsDrawerHeader(
+      decoration: BoxDecoration(
+          color: Color(0xFFCE3433)
+      ),
+      accountName: Text("byhook"),
+      accountEmail: Text("byhook@163.com"),
+      currentAccountPicture: CircleAvatar(
+          backgroundImage: AssetImage('images/default_avatar.jpg')
+      ),
+    );
+
     return DefaultTabController(
       length: 3,
       child: new Scaffold(
@@ -31,6 +51,36 @@ class HomePage extends StatelessWidget {
               Icon(Icons.directions_bus, size: 128.0, color: Colors.grey),
               Icon(Icons.directions_bike, size: 128.0, color: Colors.grey),
             ]
+        ),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              userHeader,
+              ListTile(title: Text('云音乐'),
+                leading: new CircleAvatar(
+                    backgroundColor: Color(0xFFCE3433),
+                    child: new Icon(Icons.school)),
+                onTap: () {
+                  Navigator.pop(context);
+                },),
+              ListTile(title: Text('设置'),
+                leading: new CircleAvatar(
+                    backgroundColor: Color(0xFFCE3433),
+                    child: new Text('S')
+                ),
+                onTap: () {
+                  Navigator.pop(context);
+                },),
+              ListTile(title: Text('关于我们'),
+                leading: new CircleAvatar(
+                    backgroundColor: Color(0xFFCE3433),
+                    child: new Icon(Icons.list)),
+                onTap: () {
+                  Navigator.pop(context);
+                },),
+            ],
+          ),
         ),
       ),
     );
