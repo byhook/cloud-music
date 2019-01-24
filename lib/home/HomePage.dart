@@ -14,6 +14,10 @@ class HomePage extends StatelessWidget {
           elevation: 0.0,
           backgroundColor: Color(0xFFCE3433),
           bottom: TabBar(
+              indicatorSize: TabBarIndicatorSize.label,
+              indicatorWeight: 1.0,
+              indicatorColor: Colors.white,
+              unselectedLabelColor: Colors.white,
               tabs: <Widget>[
                 Tab(icon: Icon(Icons.directions_car)),
                 Tab(icon: Icon(Icons.directions_bus)),
