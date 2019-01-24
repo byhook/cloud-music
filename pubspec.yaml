@@ -39,6 +39,7 @@ flutter:
   assets:
   - images/cover_header.png
   - images/default_avatar.jpg
+  - images/back_white.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mike_music/widgets/HomeDrawer.dart';
+import 'package:mike_music/widgets/RecommendPage.dart';
 
 class HomePage extends StatefulWidget {
 
@@ -29,15 +30,15 @@ class HomePageState extends State<HomePage> {
               indicatorColor: Colors.white,
               unselectedLabelColor: Colors.white,
               tabs: <Widget>[
-                Tab(icon: Icon(Icons.directions_car)),
-                Tab(icon: Icon(Icons.directions_bus)),
-                Tab(icon: Icon(Icons.directions_bike)),
+                Tab(text: '推荐'),
+                Tab(text: '本地音乐'),
+                Tab(text: '朋友'),
               ]
           ),
         ),
         body: TabBarView(
             children: <Widget>[
-              Icon(Icons.directions_car, size: 128.0, color: Colors.grey),
+              RecommendPage(),
               Icon(Icons.directions_bus, size: 128.0, color: Colors.grey),
               Icon(Icons.directions_bike, size: 128.0, color: Colors.grey),
             ]

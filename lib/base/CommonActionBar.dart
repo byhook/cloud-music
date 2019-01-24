@@ -15,6 +15,14 @@ class CommonActionBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
+          leading: IconButton(
+              padding: const EdgeInsets.all(14.0),
+              icon: Image.asset(
+                  'images/back_white.png'),
+              onPressed: () {
+                Navigator.pop(context);
+              }
+          ),
           backgroundColor: Color(0xFFCE3433),
           title: new Text(title),
           centerTitle: true,
