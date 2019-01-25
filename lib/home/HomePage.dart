@@ -20,7 +20,8 @@ class HomePageState extends State<HomePage> {
       child: new Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: new AppBar(
-          title: new Text('云音乐'),
+          title: new Text(
+            '云音乐', style: new TextStyle(fontWeight: FontWeight.bold),),
           centerTitle: true,
           elevation: 0.0,
           backgroundColor: Color(0xFFCE3433),
