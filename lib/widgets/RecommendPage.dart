@@ -54,6 +54,8 @@ class RecommendPageState extends State<RecommendPage> {
     RecommendBase baseItem = list[index];
     switch (baseItem.type) {
       case 0:
+        return new RecommendTopItem();
+      case 1:
         return new Container(
           height: 150.0,
           color: Colors.grey,
@@ -65,8 +67,6 @@ class RecommendPageState extends State<RecommendPage> {
             ],
           ),
         );
-      case 1:
-        return new RecommendTopItem();
     }
   }
 

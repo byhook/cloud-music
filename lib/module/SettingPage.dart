@@ -6,7 +6,7 @@ class SettingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new CommonActionBar('设置'),
+        appBar: new CommonActionBar('设置')
     );
   }
 
