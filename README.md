@@ -1,16 +1,16 @@
-# mike_music
 
-mike music
+## 麦克云音乐
 
-## Getting Started
+仿照网易云音乐的界面进行探索学习的，没想到什么别致的名字，就叫它`麦克云音乐`吧
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<div>
+    <img src='./screenshots/device104726.png' width=320>
+    <img src='./screenshots/device104742.png' width=320>
+</div>
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+<div>
+    <img src='./screenshots/device104757.png' width=320>
+    <img src='./screenshots/device104813.png' width=320>
+</div>
